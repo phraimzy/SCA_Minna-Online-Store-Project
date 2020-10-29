@@ -8,7 +8,7 @@ body{
 	margin:0 auto;
 	margin-top: auto;
 	width: 95%;
-	background-color: honeydew;
+	/* background-color: honeydew; */
 
 }
 
@@ -17,7 +17,11 @@ body{
 	display: grid;
 	grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr;
 
+}
 
+.icons a:hover{
+	opacity: 0.5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .category{
@@ -48,17 +52,27 @@ body{
 }
 
 .featured_images{
+	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	text-align: left;
 }
 
 .featured_images .box{
-	height:300px;
+	height:220px;
+	
 }
 
-/* .featured_images .box:hover {
-	opacity: 1.0;
-  } */
+.featured_images a{
+	text-decoration: none;
+}
+
+.featured_images a:hover{
+	opacity: 0.5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 
 .star ul{
 	display: flex;
@@ -80,13 +94,23 @@ body{
 	grid-template-columns: 2fr 2fr;
 	gap: 6px;
 	overflow: hidden;
+	margin-top: 60px;
 }
+
+.fashion a{
+	text-decoration: none;
+}
+
+.fashion a:hover{
+	opacity: 0.5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 
 .style{
 	display:flex;
 	background-color: #DDDBDB;
-	height:200px;
-	margin-top: 60px;
+	height:200px;	
 }
 
 .style img{
@@ -94,18 +118,105 @@ body{
 	height:100%;
 }
 
-.style h2,p{
-	padding:20px;
-}
 .style p{
+	padding:20px;
 	padding-top:0;
 }
 
 .style h2{
 	font-size: 2.5rem;
-	padding:20px;
-	
+	padding-left:20px;
+	padding-right: 20p;
+	margin-bottom: 0;
 }
-.style .sub{
+
+
+/* Responsive */
+
+/* mobile */
+@media screen and (max-width:500px){
+
+	.container{
+
+		
+		width:100%;
+		/* background-color: honeydew; */
+		
 	
+	}
+
+	.nxt_prev{
+		display:none;
+		
+	}
+
+	.featured_images{
+		display: grid;
+		grid-template-columns: 100%;
+		justify-content: center;
+	}
+
+	.featured_images .box{
+		height:220px;
+	}
+
+	/* .icons .icon_nav{
+		display:none;
+	} */
+	
+	.fashion{
+		display: flex;
+		flex-direction: column;
+		
+		margin-top: 60px;
+
+	}
+
+	.fashion a{
+		text-decoration: none;
+	}
+
+	.fashion a:hover{
+		opacity: 0.5;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.style{
+		display:flex;
+		flex-direction: column;
+		background-color: #DDDBDB;
+		height:400px;
+		width: 100%;
+		
+	}
+
+	.style img{
+		width:100%;
+		
+		padding-left: 0;
+		
+	}
+
+	.style h2{
+			font-size: 2rem;
+			padding-left:20px;
+			padding-right: 20px;
+			margin-bottom: 0;
+	}
+
+	.style p{
+		padding-left:20px;
+		padding-right:20px;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 10px;
+
+	}
+	.style .female_fashion_img{
+		margin-bottom: 20px;
+		
+	}
+	
+	
+
 }
