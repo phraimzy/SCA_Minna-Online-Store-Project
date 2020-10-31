@@ -56,6 +56,15 @@ body{
 	color: yellow;
 }
 
+.jumbotron a{
+	color: white;
+	border: 1px solid #000;
+	background-color: #000;
+	border-radius: 20px;
+	padding:8px;
+
+}
+
 .icons{
 
 	display: grid;
@@ -204,6 +213,10 @@ body{
 	margin-left: 430px;
 	padding: 20px;
 	
+}
+
+.footer a{
+	color:#fff;
 }
 
 
