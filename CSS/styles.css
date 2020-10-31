@@ -93,7 +93,7 @@ body{
 	display: grid;
 	grid-template-columns: 2fr 2fr;
 	gap: 6px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	margin-top: 60px;
 }
 
@@ -219,4 +219,89 @@ body{
 	
 	
 
+}
+
+/* Desktop */
+
+@media screen and (min-width:1300px){
+	
+	.style img{
+		padding-left: 0;
+		height:100%;
+	}
+
+	.style .fashion_text{
+		width:70%;
+		text-align: center;
+
+	}
+
+	.style .fashion_img{
+		width:30%;
+	}
+
+}
+
+@media screen and (max-width:650px) and (min-width:501px) {
+
+
+	.featured_images{
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+		text-align: left;
+	}
+
+	.fashion{
+		display: grid;
+		grid-template-columns: 2fr;
+		gap: 6px;
+		/* overflow: hidden; */
+		margin-top: 60px;
+	}
+}
+
+@media screen and (min-width:651px) and (max-width:800px){
+
+	
+	.featured_images{
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+		text-align: left;
+	}
+
+	.fashion{
+		display: grid;
+		grid-template-columns: 2fr;
+		gap: 6px;
+		overflow: hidden;
+		margin-top: 60px;
+	}
+
+	.style .fashion_text{
+		width:70%;
+		text-align: center;
+
+	}
+
+	.style .fashion_img{
+		width:30%;
+	}
+
+}
+
+@media screen and (min-width:1500px){
+
+	.container{
+
+		margin:0 auto;
+		width: 60%;
+		/* background-color: honeydew; */
+	
+	}
 }
